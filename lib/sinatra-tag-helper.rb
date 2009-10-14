@@ -1,3 +1,7 @@
+require "rubygems"
+gem "sinatra"
+require "sinatra/base"
+
 module Sinatra
   module TagHelper
     def tag(name, contents = nil, attrs = {}, &block)
