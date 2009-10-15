@@ -13,15 +13,6 @@ begin
     gem.add_development_dependency ["rspec", "sinatra"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
-rescue LoadError
-  puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
-end
-
-begin
-  require 'jeweler'
-  Jeweler::Tasks.new do |gem|
-    # ommitted for brevity
-  end
   Jeweler::GemcutterTasks.new
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
