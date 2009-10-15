@@ -5,14 +5,24 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "sinatra-tag-helper"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{tag helper for Sinatra}
+    gem.description = %Q{Minimal tag helper for Sinatra}
     gem.email = "genki@s21g.com"
     gem.homepage = "http://github.com/genki/sinatra-tag-helper"
     gem.authors = ["genki"]
     gem.add_development_dependency ["rspec", "sinatra"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
+rescue LoadError
+  puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
+end
+
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gem|
+    # ommitted for brevity
+  end
+  Jeweler::GemcutterTasks.new
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
 end
